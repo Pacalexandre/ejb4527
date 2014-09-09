@@ -10,7 +10,7 @@ public class ClienteLojaCarrinho {
 
 	public static void main(String[] args) throws Exception {
 		CarrinhoFactory factory = (CarrinhoFactory) Naming
-				.lookup("rmi://192.168.10.108:1099/loja/carrinhos");
+				.lookup("rmi://192.168.10.116:1099/loja/carrinhos");
 
 		Carrinho carrinho=factory.create();
 		

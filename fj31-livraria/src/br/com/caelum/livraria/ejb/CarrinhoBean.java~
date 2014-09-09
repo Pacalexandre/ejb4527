@@ -1,0 +1,9 @@
+package br.com.caelum.livraria.ejb;
+
+public class CarrinhoBean {
+
+	public static void main(String[] args) {
+
+	}
+
+}
