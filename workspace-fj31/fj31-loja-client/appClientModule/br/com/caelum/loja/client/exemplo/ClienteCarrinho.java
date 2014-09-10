@@ -9,6 +9,25 @@ import br.com.caelum.loja.session.Carrinho;
 public class ClienteCarrinho {
 	public static void main(String[] args) throws NamingException {
 		InitialContext ic = new InitialContext();
+		
+		for (int i = 0; i < 10; i++) {
+			Carrinho carrinho = (Carrinho)ic.lookup("ejb:fj31-loja-ear/fj31-loja-ejb3/CarrinhoBean!br.com.caelum.loja.session.Carrinho?stateful");
+			
+			Livro l1 = new Livro();
+			l1.setNome("Fausto");
+			l1.setPreco(150);
+			
+			carrinho.addLivro(l1);
+			
+			Livro l2 = new Livro();
+			l2.setNome("Pais e Filhos");
+			l2.setPreco(55);
+			
+			carrinho.addLivro(l2);
+			
+			System.out.println("Total: " + carrinho.getTotal());
+			
+		}
 		Carrinho carrinho = (Carrinho)ic.lookup("ejb:fj31-loja-ear/fj31-loja-ejb3/CarrinhoBean!br.com.caelum.loja.session.Carrinho?stateful");
 		
 		Livro l1 = new Livro();
@@ -25,6 +44,8 @@ public class ClienteCarrinho {
 		
 		System.out.println("Total: " + carrinho.getTotal());
 		
-		carrinho.finalizaCompra();
+		//carrinho.finalizaCompra();
+		
+		//carrinho.addLivro(l2);
 	}
 }
