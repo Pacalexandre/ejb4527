@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.ejb.Remove"/>
+<fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+<fullyQualifiedTypeName name="org.jboss.ejb3.annotation.Cache"/>
+<fullyQualifiedTypeName name="javax.ejb.StatefulTimeout"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="javax.ejb.PostActivate"/>
+<fullyQualifiedTypeName name="javax.ejb.PrePassivate"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
+<fullyQualifiedTypeName name="javax.ejb.Remote"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="br.com.caelum.loja.session.GerenciadorLoja"/>
+<fullyQualifiedTypeName name="br.com.caelum.loja.entity.Livro"/>
+<fullyQualifiedTypeName name="org.jboss.ejb3.annotation.Pool"/>
+</qualifiedTypeNameHistroy>

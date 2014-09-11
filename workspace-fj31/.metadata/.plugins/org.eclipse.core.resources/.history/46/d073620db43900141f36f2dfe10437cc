@@ -1,0 +1,16 @@
+package br.com.caelum.loja.session;
+import javax.ejb.Remote;
+import javax.ejb.Schedule;
+import javax.ejb.Singleton;
+
+@Singleton
+@Remote(Agendador.class)
+public class AgendadorBean implements Agendador{
+
+	@Schedule(hour="*", minute="*/1",second="0" , persistent=false)
+	public void agenda() {
+		System.out.println("Enviando e-mail");
+	}
+	
+
+}
