@@ -11,5 +11,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/ejb4527/jboss7/bin/client/jboss-client.jar"/>
 	<classpathentry kind="lib" path="/home/ejb4527/jboss7/modules/org/jboss/ejb3/main/jboss-ejb3-ext-api-2.0.0.jar"/>
+	<classpathentry kind="lib" path="/home/ejb4527/jboss7/modules/org/hibernate/main/hibernate-core-4.0.1.Final.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

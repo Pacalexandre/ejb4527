@@ -8,6 +8,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import br.com.caelum.loja.entity.Autor;
 import br.com.caelum.loja.entity.Livro;
 
 @Stateless
@@ -48,6 +49,18 @@ public class GerenciadorLojaBean implements GerenciadorLoja {
 	public void salva(Livro livro) {
 		this.em.persist(livro);
 		System.out.println("Salva livro:" + livro.getId());
+	}
+	@Override
+	public Autor salvaAutor(Autor autor) {
+		this.em.persist(autor);
+		return autor;
+	}
+
+	public Livro procuraLivro(long id) {
+		System.out.println(id);
+		String jpql = "select l from Livro l join fetch l.autores where l.id = :id ";
+		return (Livro) em.createQuery(jpql).setParameter("id", id).getSingleResult();
+		
 	}
 	
 }
