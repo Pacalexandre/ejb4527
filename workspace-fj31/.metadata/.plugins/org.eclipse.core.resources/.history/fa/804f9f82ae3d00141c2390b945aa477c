@@ -1,0 +1,8 @@
+package br.com.caelum.loja.util;
+
+
+@XmlRootElement
+public class Livros {
+	
+
+}
