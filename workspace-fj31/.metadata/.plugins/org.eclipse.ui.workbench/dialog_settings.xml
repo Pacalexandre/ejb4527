@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="847" key="dialogWidth"/>
-		<item value="474" key="dialogHeight"/>
+		<item value="835" key="dialogWidth"/>
+		<item value="462" key="dialogHeight"/>
 		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
+			<item value="server"/>
 			<item value="console"/>
 		</list>
 		<list key="orderedElements">
+			<item value="org.eclipse.wst.server.ui.ServersView"/>
 			<item value="org.eclipse.ui.console.ConsoleView"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
 			<item value="1"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="-19" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
 	</section>
 </section>

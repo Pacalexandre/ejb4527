@@ -42,6 +42,7 @@ public class MensageiroBean implements Mensageiro {
 			
 			Marshaller marsh = JAXBContext.newInstance(Livros.class).createMarshaller();
 			StringWriter sw = new StringWriter();
+			marsh.setProperty(marsh.JAXB_FORMATTED_OUTPUT, true);
 			marsh.marshal(wrapper, sw);
 			
 			TextMessage textmes = sessao.createTextMessage(sw.toString());

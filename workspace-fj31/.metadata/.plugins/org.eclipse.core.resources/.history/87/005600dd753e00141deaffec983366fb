@@ -1,0 +1,13 @@
+package br.com.caelum.correios.ws.programa;
+
+public class ConsumidorServicoCorreios {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

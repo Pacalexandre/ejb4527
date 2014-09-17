@@ -1,0 +1,9 @@
+package br.com.caelum.loja.ws;
+
+import java.util.List;
+
+public interface ConsultaDeLivros {
+	
+	List<Livro>
+
+}
