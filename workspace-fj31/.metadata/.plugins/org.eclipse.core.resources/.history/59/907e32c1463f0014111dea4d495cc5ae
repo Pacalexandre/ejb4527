@@ -1,0 +1,29 @@
+package br.com.caelum.rest;
+
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+import br.com.caelum.loja.entity.Livro;
+import br.com.caelum.loja.session.GerenciadorLoja;
+
+@Stateless
+@Path("/loja")
+public class LojaResource {
+
+	@EJB
+	GerenciadorLoja gerenciador;
+
+	@GET
+	@Path("/livros")
+	@Produces("plain/text")
+	public List<Livro> getLivrosXml() {
+		List<Livro> livros = gerenciador.listaLivros();
+		return livros;
+	}
+
+}

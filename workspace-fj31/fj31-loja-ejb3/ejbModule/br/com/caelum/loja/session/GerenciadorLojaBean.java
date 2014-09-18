@@ -1,11 +1,13 @@
 package br.com.caelum.loja.session;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 
 import br.com.caelum.loja.entity.Autor;
@@ -46,9 +48,10 @@ public class GerenciadorLojaBean implements GerenciadorLoja {
 		return this.repositorio.get(isbn);
 	}
 	@Override
-	public void salva(Livro livro) {
+	public Livro salva(Livro livro) {
 		this.em.persist(livro);
 		System.out.println("Salva livro:" + livro.getId());
+		return livro;
 	}
 	@Override
 	public Autor salvaAutor(Autor autor) {
@@ -59,8 +62,17 @@ public class GerenciadorLojaBean implements GerenciadorLoja {
 	public Livro procuraLivro(long id) {
 		System.out.println(id);
 		String jpql = "select l from Livro l join fetch l.autores where l.id = :id ";
+		try{
 		return (Livro) em.createQuery(jpql).setParameter("id", id).getSingleResult();
-		
+		} catch (NoResultException e) {
+			return null;
+		}
+	}
+	@Override
+	public List<Livro> listaLivros() {
+		System.out.println("-----------------REST--------------------");
+		String jpql = "select l from Livro as l join fetch l.autores";
+		return this.em.createQuery(jpql).getResultList();
 	}
 	
 }

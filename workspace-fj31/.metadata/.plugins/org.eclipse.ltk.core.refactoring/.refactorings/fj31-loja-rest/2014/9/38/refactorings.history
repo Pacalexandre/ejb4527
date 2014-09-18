@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;fj31-loja-client/appClientModule/backup&apos;&#x0A;- Original project: &apos;fj31-loja-rest&apos;&#x0A;- Destination element: &apos;fj31-loja-client/appClientModule/backup&apos;&#x0A;- Original elements:&#x0A;     br.com.caelum.loja.rest.LojaResource.java&#x0A;     br.com.caelum.loja.rest.LojaApplication.java" description="Copy compilation units" destination="=fj31-loja-client/appClientModule&lt;backup" element1="/src&lt;br.com.caelum.loja.rest{LojaResource.java" element2="/src&lt;br.com.caelum.loja.rest{LojaApplication.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1411052480772" units="2" version="1.0"/>
+</session>

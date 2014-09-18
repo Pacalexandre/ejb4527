@@ -1,0 +1,15 @@
+package br.com.caelum.loja.rest;
+
+import javax.ejb.EJB;
+import javax.ws.rs.Path;
+
+import br.com.caelum.loja.session.GerenciadorLoja;
+
+@Path("/loja")
+public class LojaResource {
+	
+	@EJB
+	GerenciadorLoja gerenciador;
+	
+	
+}

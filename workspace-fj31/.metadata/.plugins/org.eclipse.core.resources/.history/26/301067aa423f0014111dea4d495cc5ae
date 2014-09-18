@@ -1,0 +1,9 @@
+package br.com.caelum.loja.rest;
+
+import javax.ws.rs.ApplicationPath;
+
+@ApplicationPath("/loja")
+public class LojaApplication {
+
+	
+}

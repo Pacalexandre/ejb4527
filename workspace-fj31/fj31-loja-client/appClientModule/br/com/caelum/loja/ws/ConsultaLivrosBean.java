@@ -26,16 +26,16 @@ public interface ConsultaLivrosBean {
 
     /**
      * 
-     * @param arg0
+     * @param nome
      * @return
      *     returns java.util.List<br.com.caelum.loja.ws.Livro>
      */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "buscaLivro", targetNamespace = "http://session.loja.caelum.com.br/", className = "br.com.caelum.loja.ws.BuscaLivro")
-    @ResponseWrapper(localName = "buscaLivroResponse", targetNamespace = "http://session.loja.caelum.com.br/", className = "br.com.caelum.loja.ws.BuscaLivroResponse")
-    public List<Livro> buscaLivro(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
+    @WebMethod(operationName = "ConsultaPorNome")
+    @WebResult(name = "Livros", targetNamespace = "")
+    @RequestWrapper(localName = "ConsultaPorNome", targetNamespace = "http://session.loja.caelum.com.br/", className = "br.com.caelum.loja.ws.ConsultaPorNome")
+    @ResponseWrapper(localName = "ConsultaPorNomeResponse", targetNamespace = "http://session.loja.caelum.com.br/", className = "br.com.caelum.loja.ws.ConsultaPorNomeResponse")
+    public List<Livro> consultaPorNome(
+        @WebParam(name = "nome", targetNamespace = "")
+        String nome);
 
 }

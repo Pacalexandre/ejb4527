@@ -933,3 +933,197 @@ Binding(CTRL+D,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2014-09-18 09:34:19.940 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-09-18 09:34:28.280
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-18 09:34:33.843
+!MESSAGE NLS missing message: JBossRuntimeStartup_JBoss_EAP_Server_6_1 in: org.jboss.ide.eclipse.as.core.Messages
+
+!ENTRY org.eclipse.jface 2 0 2014-09-18 09:58:55.134
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-09-18 09:58:55.134
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@770017,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@a7104d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2014-09-18 10:02:13.784
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.initialize(SourceMethod.java:89)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.newInstance(SourceMethod.java:62)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildMethod(SourceType.java:563)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncMethods(SourceType.java:553)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:142)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:120)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:68)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1433)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1273)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1252)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:799)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:786)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2014-09-18 10:02:14.587
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.initialize(SourceMethod.java:89)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.newInstance(SourceMethod.java:62)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildMethod(SourceType.java:563)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncMethods(SourceType.java:553)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:142)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:120)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:68)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1433)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1273)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1252)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:799)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:786)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2014-09-18 10:02:18.894
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.initialize(SourceMethod.java:89)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.newInstance(SourceMethod.java:62)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildMethod(SourceType.java:563)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncMethods(SourceType.java:553)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:142)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:120)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:68)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1433)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1273)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1252)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:799)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:786)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2014-09-18 10:02:20.083
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.initialize(SourceMethod.java:89)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.newInstance(SourceMethod.java:62)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildMethod(SourceType.java:563)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncMethods(SourceType.java:553)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:142)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:120)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:68)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1433)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1273)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1252)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:799)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:786)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2014-09-18 10:02:20.610
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.initialize(SourceMethod.java:89)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.newInstance(SourceMethod.java:62)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildMethod(SourceType.java:563)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncMethods(SourceType.java:553)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:142)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:120)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:68)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1433)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1273)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1252)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:799)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:786)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2014-09-18 10:02:27.194
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.initialize(SourceMethod.java:89)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.newInstance(SourceMethod.java:62)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildMethod(SourceType.java:563)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncMethods(SourceType.java:553)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:142)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:120)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:68)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1433)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1273)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1252)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:799)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:786)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2014-09-18 10:02:28.255
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.initialize(SourceMethod.java:89)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.newInstance(SourceMethod.java:62)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildMethod(SourceType.java:563)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncMethods(SourceType.java:553)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:142)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:120)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:68)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1433)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1273)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1252)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:799)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:786)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2014-09-18 10:02:29.123
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.initialize(SourceMethod.java:89)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceMethod.newInstance(SourceMethod.java:62)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildMethod(SourceType.java:563)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncMethods(SourceType.java:553)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:142)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:120)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:68)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1433)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1273)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1252)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:799)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:786)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

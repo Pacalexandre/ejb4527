@@ -1,0 +1,10 @@
+package backup;
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+@ApplicationPath("/loja")
+public class LojaApplication extends Application{
+
+	
+}

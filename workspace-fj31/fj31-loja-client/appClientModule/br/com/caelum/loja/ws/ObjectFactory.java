@@ -24,8 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _BuscaLivroResponse_QNAME = new QName("http://session.loja.caelum.com.br/", "buscaLivroResponse");
-    private final static QName _BuscaLivro_QNAME = new QName("http://session.loja.caelum.com.br/", "buscaLivro");
+    private final static QName _ConsultaPorNome_QNAME = new QName("http://session.loja.caelum.com.br/", "ConsultaPorNome");
+    private final static QName _ConsultaPorNomeResponse_QNAME = new QName("http://session.loja.caelum.com.br/", "ConsultaPorNomeResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: br.com.caelum.loja.ws
@@ -35,19 +35,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link BuscaLivroResponse }
+     * Create an instance of {@link ConsultaPorNome }
      * 
      */
-    public BuscaLivroResponse createBuscaLivroResponse() {
-        return new BuscaLivroResponse();
+    public ConsultaPorNome createConsultaPorNome() {
+        return new ConsultaPorNome();
     }
 
     /**
-     * Create an instance of {@link BuscaLivro }
+     * Create an instance of {@link ConsultaPorNomeResponse }
      * 
      */
-    public BuscaLivro createBuscaLivro() {
-        return new BuscaLivro();
+    public ConsultaPorNomeResponse createConsultaPorNomeResponse() {
+        return new ConsultaPorNomeResponse();
     }
 
     /**
@@ -67,21 +67,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BuscaLivroResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ConsultaPorNome }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://session.loja.caelum.com.br/", name = "buscaLivroResponse")
-    public JAXBElement<BuscaLivroResponse> createBuscaLivroResponse(BuscaLivroResponse value) {
-        return new JAXBElement<BuscaLivroResponse>(_BuscaLivroResponse_QNAME, BuscaLivroResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://session.loja.caelum.com.br/", name = "ConsultaPorNome")
+    public JAXBElement<ConsultaPorNome> createConsultaPorNome(ConsultaPorNome value) {
+        return new JAXBElement<ConsultaPorNome>(_ConsultaPorNome_QNAME, ConsultaPorNome.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BuscaLivro }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ConsultaPorNomeResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://session.loja.caelum.com.br/", name = "buscaLivro")
-    public JAXBElement<BuscaLivro> createBuscaLivro(BuscaLivro value) {
-        return new JAXBElement<BuscaLivro>(_BuscaLivro_QNAME, BuscaLivro.class, null, value);
+    @XmlElementDecl(namespace = "http://session.loja.caelum.com.br/", name = "ConsultaPorNomeResponse")
+    public JAXBElement<ConsultaPorNomeResponse> createConsultaPorNomeResponse(ConsultaPorNomeResponse value) {
+        return new JAXBElement<ConsultaPorNomeResponse>(_ConsultaPorNomeResponse_QNAME, ConsultaPorNomeResponse.class, null, value);
     }
 
 }

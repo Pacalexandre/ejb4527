@@ -10,7 +10,7 @@ public class ConsultaLivro {
 
 	public static void main(String[] args) {
 		ConsultaLivrosBean service = new ConsultaLivrosBeanService().getConsultaLivrosBeanPort();
-		List<Livro> livros = service.buscaLivro("Paul");
+		List<Livro> livros = service.consultaPorNome("Paul");
 		for (Livro l : livros) {
 			System.out.println(l.getNome());
 		}
