@@ -68,11 +68,21 @@ public class GerenciadorLojaBean implements GerenciadorLoja {
 			return null;
 		}
 	}
+	
 	@Override
 	public List<Livro> listaLivros() {
 		System.out.println("-----------------REST--------------------");
-		String jpql = "select l from Livro as l join fetch l.autores";
+		String jpql = "select distinct(l) from Livro as l join fetch l.autores";
 		return this.em.createQuery(jpql).getResultList();
+	}
+	
+
+	@Override
+	public void deleta(long id) {
+		Livro livro = em.find(Livro.class, id);
+		em.remove(livro);
+		System.out.println("Livro Deletado" + id);
+		
 	}
 	
 }

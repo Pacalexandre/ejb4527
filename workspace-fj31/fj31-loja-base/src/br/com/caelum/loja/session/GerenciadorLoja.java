@@ -16,5 +16,7 @@ public interface GerenciadorLoja {
 	Livro procuraLivro(long id);
 	
 	List<Livro> listaLivros();
+	
+	void deleta(long id);
 
 }

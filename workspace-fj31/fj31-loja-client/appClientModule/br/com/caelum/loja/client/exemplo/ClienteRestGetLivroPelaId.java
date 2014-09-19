@@ -16,7 +16,7 @@ public class ClienteRestGetLivroPelaId {
 		HttpClient htcli = new DefaultHttpClient();
 		
 		HttpGet get = new HttpGet("http://localhost:8080/fj31-loja-rest/loja/livro/1");
-		get.addHeader("accept","application/xml");
+		get.addHeader("accept","application/json");
 		
 		HttpResponse response = htcli.execute(get);
 		InputStream content = response.getEntity().getContent();
