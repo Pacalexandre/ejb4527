@@ -9,11 +9,6 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
 
 import br.com.caelum.loja.entity.Autor;
 import br.com.caelum.loja.entity.Livro;
@@ -88,17 +83,6 @@ public class GerenciadorLojaBean implements GerenciadorLoja {
 		em.remove(livro);
 		System.out.println("Livro Deletado" + id);
 		
-	}
-	
-	@Override
-	@GET
-	@Path("/livros/autor/{nome}")
-	@Produces("application/json")
-	public List<Livro> buscaLivrosPeloAutor(@PathParam("nome") String nome) {
-		String jpql = "select distinct(l) from Livro l join fetch l.autores a where a.nome = :nome ";
-		Query q = em.createQuery(jpql);
-		q.setParameter("nome", nome);
-		return q.getResultList();
 	}
 	
 }

@@ -95,7 +95,7 @@ public class GerenciadorLojaBean implements GerenciadorLoja {
 	@Path("/livros/autor/{nome}")
 	@Produces("application/json")
 	public List<Livro> buscaLivrosPeloAutor(@PathParam("nome") String nome) {
-		String jpql = "select distinct(l) from Livro l join fetch l.autores a where a.nome = :nome ";
+		String jpql = "select l from Livro l join fetch l.autores a where a.nome = :nome ";
 		Query q = em.createQuery(jpql);
 		q.setParameter("nome", nome);
 		return q.getResultList();
