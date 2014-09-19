@@ -1587,3 +1587,15 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.pa
 
 !ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-19 19:52:09.810
 !MESSAGE Module fj31-loja-rest published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-19 20:05:52.607
+!MESSAGE Module fj31-loja-ear published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-19 20:05:52.615
+!MESSAGE Module fj31-loja-ejb3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-19 20:05:52.627
+!MESSAGE Module fj31-loja-base published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-09-19 20:05:52.633
+!MESSAGE Module fj31-loja-rest published without error.
