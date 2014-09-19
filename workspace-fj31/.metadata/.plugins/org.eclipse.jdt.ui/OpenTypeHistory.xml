@@ -4,6 +4,7 @@
 <typeInfo handle="=fj31-loja-client/appClientModule&lt;br.com.caelum.loja.client.exemplo{ClienteAgendador.java[ClienteAgendador" modifiers="1" timestamp="1410440593000"/>
 <typeInfo handle="=fj31-loja-client/appClientModule&lt;br.com.caelum.loja.client.exemplo{ClienteGerenciador.java[ClienteGerenciador" modifiers="1" timestamp="1410533011000"/>
 <typeInfo handle="=fj31-loja-ejb3/ejbModule&lt;br.com.caelum.loja.session{CarrinhoBean.java[CarrinhoBean" modifiers="1" timestamp="1410441168000"/>
-<typeInfo handle="=fj31-loja-ejb3/ejbModule&lt;br.com.caelum.loja.session{MensageiroBean.java[MensageiroBean" modifiers="1" timestamp="1410439105000"/>
-<typeInfo handle="=fj31-loja-base/src&lt;br.com.caelum.loja.entity{Livro.java[Livro" modifiers="1" timestamp="1410526595000"/>
+<typeInfo handle="=fj31-loja-ejb3/ejbModule&lt;br.com.caelum.loja.session{MensageiroBean.java[MensageiroBean" modifiers="1" timestamp="1410880246000"/>
+<typeInfo handle="=fj31-loja-base/src&lt;br.com.caelum.loja.entity{Livro.java[Livro" modifiers="1" timestamp="1411049571000"/>
+<typeInfo handle="=fj31-loja-ejb3/ejbModule&lt;br.com.caelum.loja.session{GerenciadorLojaBean.java[GerenciadorLojaBean" modifiers="1" timestamp="1411055340000"/>
 </typeInfoHistroy>
